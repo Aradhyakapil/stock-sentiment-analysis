@@ -1,0 +1,87 @@
+body {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #2d3748; /* Dark background for high contrast */
+  color: #ffffff; /* Light text color for contrast */
+  margin: 0;
+}
+
+.container {
+  height: 900px;
+  width: 750px;
+  padding: 2.5rem;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.2); /* Semi-transparent white for glass effect */
+  backdrop-filter: blur(15px); /* Increased blur for more pronounced glassmorphism */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25); /* Stronger shadow for added depth */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Light border for subtle separation */
+  text-align: left;
+  color: #ffffff; /* Light text color inside the container */
+}
+
+h1 {
+  margin-bottom: 2rem;
+  color: #f0f4f8; /* Light color for headings to stand out against the dark background */
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+  color: #f0f4f8; /* Lighter labels for better readability */
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 0.9rem;
+  border: 1px solid #a0aec0; /* Medium gray border for contrast */
+  border-radius: 6px;
+  font-size: 1.1rem;
+  color: #2d3748; /* Dark text inside the input for clarity */
+  background-color: rgba(255, 255, 255, 0.6); /* Slight transparency for inputs */
+}
+
+input[type="text"]:focus {
+  border-color: #3182ce; /* Bright blue for focus */
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.8); /* Lighter on focus */
+}
+
+button {
+  background: linear-gradient(135deg, #3182ce, #2b6cb0); /* Gradient for button */
+  color: #ffffff;
+  padding: 1rem 2.5rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #2b6cb0, #2c5282); /* Darker gradient on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+.result {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  border-top: 2px solid #cbd5e0; /* Darker border to define result section */
+  color: #000000; /* Light text color in results */
+  font-size: 1.1rem;
+  background-color: rgba(255, 255, 255, 0.6); /* Semi-transparent background for result */
+  border-radius: 6px;
+}
